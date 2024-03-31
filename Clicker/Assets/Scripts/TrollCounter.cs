@@ -7,6 +7,4 @@ public class TrollCounter : MonoBehaviour
     public int countTrollNow = 0;
     public int level = 1;
     public int trollCount = 0;
-
-
 }
