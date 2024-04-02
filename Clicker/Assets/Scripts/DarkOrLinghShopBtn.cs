@@ -30,6 +30,7 @@ public class DarkOrLinghShopBtn : MonoBehaviour
             _troll.color = new Color(0.8f, 0.8f, 0.8f);
             _price.color = new Color(0.6f, 0.5f, 0.1f);
             _description.color = new Color(0.6f, 0.6f, 0.6f);
+            _button.enabled = false;
         }
 
         else
@@ -40,6 +41,7 @@ public class DarkOrLinghShopBtn : MonoBehaviour
             _troll.color = new Color(1f, 1f, 1f);
             _price.color = new Color(1f, 0.75f, 0.1f);
             _description.color = new Color(1f, 1f, 1f);
+            _button.enabled = true;
         }
     }
 }

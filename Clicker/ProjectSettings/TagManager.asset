@@ -4,11 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ImageShop
-  - CaprionShop
-  - TrollShop
-  - PriceShop
-  - DescriptionShop
+  - CounterTroll
   layers:
   - Default
   - TransparentFX
