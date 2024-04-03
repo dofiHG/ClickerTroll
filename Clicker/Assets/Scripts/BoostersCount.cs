@@ -49,7 +49,7 @@ public class BoostersCount : MonoBehaviour
                 _trollCounter.countTrollNow -= 1000000000;
                 break;
             case "Zhumaisemba":
-                _trollCounter.trollPerClick += 80000;
+                _trollCounter.trollPerClick += 280000;
                 _trollCounter.countTrollNow -= 15000000000;
                 break;
             case "Zhac":
@@ -58,7 +58,7 @@ public class BoostersCount : MonoBehaviour
                 break;
             case "Gigachad":
                 _trollCounter.trollPerClick += 10000000;
-                _trollCounter.countTrollNow -= 1000000000000;
+                _trollCounter.countTrollNow -= 100000000000000;
                 break;
         }
     }
