@@ -40,7 +40,12 @@ public class LevelCounter : MonoBehaviour
             case 7: _levelAmount = 500000000; break;
             case 8: _levelAmount = 5000000000; break;
             case 9: _levelAmount = 50000000000; break;
-            case 10: _levelAmount = 500000000000; break;
+            case 10: _levelAmount = 5000000000000; break;
+            case 11: _levelAmount = 50000000000000; break;
+            case 12: _levelAmount = 500000000000000; break;
+            case 13: _levelAmount = 5000000000000000; break;
+            case 14: _levelAmount = 90000000000000000; break;
+            case 15: _levelAmount = 500000000000000000; break;
         }
 
         _slider.maxValue = _levelAmount;

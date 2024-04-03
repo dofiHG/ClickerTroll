@@ -18,15 +18,31 @@ public class ViewTextUpTheFace : MonoBehaviour
         _textUpTheFace.text = $"+ {_trollCounter.trollPerClick}";
         _trollCounter.countTrollNow += _trollCounter.trollPerClick;
         if (_trollCounter.countTrollNow >= 1000 && _trollCounter.countTrollNow < 1000000)
-            { _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000) / 100}Ê"; }
+            _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000) / 100}Ê";
         else if (_trollCounter.countTrollNow >= 1000000 && _trollCounter.countTrollNow < 1000000000)
-            { _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000000) / 100}M"; }
+        { 
+            _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000000) / 100}M";
+            _prefab.GetComponent<TMP_Text>().text = $"{Math.Truncate(100 * _trollCounter.trollPerClick / 1000) / 100}M";
+        }
         else if (_trollCounter.countTrollNow >= 1000000000 && _trollCounter.countTrollNow < 1000000000000)
-            { _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000000000) / 100}B"; }
+        { 
+            _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000000000) / 100}B";
+            _prefab.GetComponent<TMP_Text>().text = $"{Math.Truncate(100 * _trollCounter.trollPerClick / 1000) / 100}B";
+        }
         else if (_trollCounter.countTrollNow >= 1000000000000 && _trollCounter.countTrollNow < 1000000000000000)
-            { _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000000000000) / 100}T"; }
+        { 
+            _count.text = $"{Math.Truncate(100 * _trollCounter.countTrollNow / 1000000000000) / 100}T";
+            _prefab.GetComponent<TMP_Text>().text = $"{Math.Truncate(100 * _trollCounter.trollPerClick / 1000) / 100}T";
+        }
         else if (_trollCounter.countTrollNow >= 0 && _trollCounter.countTrollNow < 1000)
-            { _count.text = _trollCounter.countTrollNow.ToString(); }
+        { 
+            _count.text = _trollCounter.countTrollNow.ToString();
+            _prefab.GetComponent<TMP_Text>().text = _trollCounter.trollPerClick.ToString();
+        }
+
+        if(_trollCounter.trollPerClick >= 1000 && _trollCounter.trollPerClick < 1000000)
+            _prefab.GetComponent<TMP_Text>().text = $"{Math.Truncate(100 * _trollCounter.trollPerClick / 1000) / 100}Ê";
+
         _instantiate = Instantiate(_prefab, _canvas.transform);
         Destroy(_instantiate, 1);
     }
