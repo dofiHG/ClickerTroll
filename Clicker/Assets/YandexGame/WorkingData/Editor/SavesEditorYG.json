@@ -1,13 +1,17 @@
 {
-    "idSave": 9,
+    "idSave": 1547,
     "isFirstSession": false,
-    "language": "ru",
+    "language": "en",
     "promptDone": false,
-    "money": 132,
-    "newPlayerName": "333",
+    "money": 678,
+    "newPlayerName": "ghj",
     "openLevels": [
         false,
         true,
         false
-    ]
+    ],
+    "trollPerClick": 5.0,
+    "trollPerSecond": 0.0,
+    "countTrollNow": 485.0,
+    "level": 1
 }

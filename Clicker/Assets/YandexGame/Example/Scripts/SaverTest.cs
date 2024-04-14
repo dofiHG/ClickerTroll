@@ -7,7 +7,7 @@ namespace YG.Example
     {
         [SerializeField] InputField integerText;
         [SerializeField] InputField stringifyText;
-        [SerializeField] Toggle[] booleanArrayToggle;
+        //[SerializeField] Toggle[] booleanArrayToggle;
 
         private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
         private void OnDisable() => YandexGame.GetDataEvent -= GetLoad;
@@ -23,8 +23,8 @@ namespace YG.Example
             YandexGame.savesData.money = int.Parse(integerText.text);
             YandexGame.savesData.newPlayerName = stringifyText.text.ToString();
 
-            for (int i = 0; i < booleanArrayToggle.Length; i++)
-                YandexGame.savesData.openLevels[i] = booleanArrayToggle[i].isOn;
+            /*for (int i = 0; i < booleanArrayToggle.Length; i++)
+                YandexGame.savesData.openLevels[i] = booleanArrayToggle[i].isOn;*/
 
             YandexGame.SaveProgress();
         }
@@ -39,8 +39,8 @@ namespace YG.Example
             integerText.placeholder.GetComponent<Text>().text = YandexGame.savesData.money.ToString();
             stringifyText.placeholder.GetComponent<Text>().text = YandexGame.savesData.newPlayerName;
 
-            for (int i = 0; i < booleanArrayToggle.Length; i++)
-                booleanArrayToggle[i].isOn = YandexGame.savesData.openLevels[i];
+            /*for (int i = 0; i < booleanArrayToggle.Length; i++)
+                booleanArrayToggle[i].isOn = YandexGame.savesData.openLevels[i];*/
         }
     }
 }

@@ -6,10 +6,11 @@ public class Advertising : MonoBehaviour
 {
     private TrollCounter _trollCounter;
     private float _advetrisingTimmer = 60f;
-    public Button _advetrisingButton;
+    private Button _advetrisingButton;
 
     private void Start()
     {
+        _advetrisingButton = GameObject.FindGameObjectWithTag("AdBtn").GetComponent<Button>();
         _trollCounter = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TrollCounter>();
     }
 
