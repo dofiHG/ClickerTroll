@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Localization : MonoBehaviour
 {
     [SerializeField] private Sprite[] _sprites;
-    private int languageInt = 0;
+    public int languageInt = 0;
     private string[] languages = { "Russain", "English", "Turkish", "German"};
     private Image _sprite;
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CounterTroll
   - AdBtn
+  - LangBtn
+  - Sound
   layers:
   - Default
   - TransparentFX

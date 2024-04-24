@@ -1,10 +1,11 @@
 {
-    "idSave": 306,
+    "idSave": 658,
     "isFirstSession": true,
     "language": "en",
     "promptDone": false,
-    "level": 0,
+    "langiageInt": 0,
+    "level": 1,
     "trollPerClick": 1.0,
     "trollPerSecond": 0.0,
-    "countTrollNow": 1.0
+    "countTrollNow": 0.0
 }

@@ -10,7 +10,8 @@ namespace YG
         public string language = "ru";
         public bool promptDone;
 
-        public int level = 1;
+        public int langiageInt = 0;
+        public int level = 0;
         public float trollPerClick = 1;
         public float trollPerSecond = 0;
         public float countTrollNow = 0;

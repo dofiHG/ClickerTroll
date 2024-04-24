@@ -1,5 +1,4 @@
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,11 +21,6 @@ public class LevelCounter : MonoBehaviour
     {
         _slider.value = _trollCounter.countTrollNow;
         _levelText.text = $"Level {_trollCounter.level}";
-        
-        if (_trollCounter.countTrollNow > _levelAmount)
-        {
-            _trollCounter.level++;
-        }
 
         switch (_trollCounter.level)
         {
@@ -46,6 +40,8 @@ public class LevelCounter : MonoBehaviour
             case 14: _levelAmount = 900000000000000000; break;
             case 15: _levelAmount = 9999999999999999999; break;
         }
+
+        if (_trollCounter.countTrollNow > _levelAmount) { _trollCounter.level++; }
 
         if (_trollCounter.level > 14 && _trollCounter.countTrollNow > _levelAmount) 
         {

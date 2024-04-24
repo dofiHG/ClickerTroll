@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +5,6 @@ public class SoundMute : MonoBehaviour
 {
     [SerializeField] private Sprite[] sprites;
     private Image image;
-    int a = 1;
 
     private void Start() => image = GetComponent<Image>();
 
