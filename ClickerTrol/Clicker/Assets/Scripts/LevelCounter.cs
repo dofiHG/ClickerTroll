@@ -19,9 +19,6 @@ public class LevelCounter : MonoBehaviour
 
     private void Update()
     {
-        _slider.value = _trollCounter.countTrollNow;
-        _levelText.text = $"Level {_trollCounter.level}";
-
         switch (_trollCounter.level)
         {
             case 1: _levelAmount = 170; break;
@@ -42,6 +39,9 @@ public class LevelCounter : MonoBehaviour
         }
 
         if (_trollCounter.countTrollNow > _levelAmount) { _trollCounter.level++; }
+
+        _slider.value = _trollCounter.countTrollNow;
+        _levelText.text = $"Level {_trollCounter.level}";
 
         if (_trollCounter.level > 14 && _trollCounter.countTrollNow > _levelAmount) 
         {
